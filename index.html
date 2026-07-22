@@ -1,18 +1,156 @@
-<!DOCTYPE html>
-<html lang="zh-Hant">
+<!doctype html>
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>乐队</title>
-
+    <meta name="description" content="清新空气乐队官方网站：乐队介绍、2026 夏季巡演与成员信息。">
+    <meta name="theme-color" content="#050816">
+    <title>清新空气｜2026 夏季巡演</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 
 <body>
-    <h1>清新空气</h1>
-    <p>巡演</p>
-    <p id="倒数"></p>
+    <a class="skip-link" href="#main-content">跳到主要内容</a>
+
+    <header class="site-header" id="top">
+        <a class="brand" href="#top" aria-label="清新空气首页">清新空气</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+            <span></span><span></span><span></span>
+            <span class="sr-only">打开导航</span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="主导航">
+            <a href="#about">关于</a>
+            <a href="#tour">巡演</a>
+            <a href="#members">成员</a>
+            <a href="#music">音乐</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero__backdrop" aria-hidden="true"></div>
+            <div class="hero__content reveal">
+                <p class="eyebrow">2026 SUMMER TOUR</p>
+                <h1 id="hero-title">清新空气</h1>
+                <p class="hero__lead">在噪音与星光之间，寻找属于我们的声音。</p>
+                <div class="countdown" id="countdown" data-show-date="2026-08-08" aria-live="polite">
+                    <span class="countdown__label">距离台北现场</span>
+                    <strong id="countdown-value">正在计算…</strong>
+                </div>
+                <div class="hero__actions">
+                    <a class="button button--primary" href="#tour">查看巡演</a>
+                    <a class="button button--ghost" href="#about">认识乐队</a>
+                </div>
+            </div>
+            <a class="scroll-cue" href="#about" aria-label="继续浏览">向下</a>
+        </section>
+
+        <section class="section about" id="about" aria-labelledby="about-title">
+            <div class="section-heading reveal">
+                <p class="eyebrow">ABOUT US</p>
+                <h2 id="about-title">关于清新空气</h2>
+            </div>
+            <div class="about__grid">
+                <p class="about__statement reveal">我们把电子音色、摇滚节奏与真实情绪放进音乐里，记录城市生活中的孤独、勇气与相遇。</p>
+                <div class="about__copy reveal">
+                    <p>“清新空气”不只是一个名字，也是一种期待：当世界变得拥挤而嘈杂，音乐仍能让人停下来，重新呼吸。</p>
+                    <p>我们希望每一次现场都不只是演出，而是一次共同经历——灯光亮起时，台上与台下拥有同一个心跳。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section tour" id="tour" aria-labelledby="tour-title">
+            <div class="section-heading reveal">
+                <p class="eyebrow">LIVE 2026</p>
+                <h2 id="tour-title">夏季巡演</h2>
+            </div>
+            <article class="show-card reveal">
+                <div class="show-card__date" aria-label="2026年8月8日">
+                    <span>AUG</span>
+                    <strong>08</strong>
+                    <span>2026</span>
+                </div>
+                <div class="show-card__details">
+                    <p class="show-card__status">台北站</p>
+                    <h3>台北 · 现场演出</h3>
+                    <p>场地、时间与入场信息即将公布</p>
+                </div>
+                <a class="button button--small" href="#contact">获取演出消息</a>
+            </article>
+            <p class="tour__note reveal">更多城市正在计划中，新的演出信息会在这里更新。</p>
+        </section>
+
+        <section class="section members" id="members" aria-labelledby="members-title">
+            <div class="section-heading reveal">
+                <p class="eyebrow">THE BAND</p>
+                <h2 id="members-title">一起制造声音的人</h2>
+            </div>
+            <div class="member-grid">
+                <article class="member-card member-card--featured reveal">
+                    <span class="member-card__number">01</span>
+                    <div>
+                        <h3>阿哲</h3>
+                        <p class="member-card__role">团长</p>
+                        <p>协调乐队创作方向，连接音乐、成员与现场。</p>
+                    </div>
+                </article>
+                <article class="member-card reveal">
+                    <span class="member-card__number">02</span>
+                    <div>
+                        <h3>成员即将公开</h3>
+                        <p class="member-card__role">吉他</p>
+                        <p>负责旋律线、音色设计与现场吉他演奏。</p>
+                    </div>
+                </article>
+                <article class="member-card reveal">
+                    <span class="member-card__number">03</span>
+                    <div>
+                        <h3>成员即将公开</h3>
+                        <p class="member-card__role">贝斯</p>
+                        <p>用低频建立歌曲的力量与律动。</p>
+                    </div>
+                </article>
+                <article class="member-card reveal">
+                    <span class="member-card__number">04</span>
+                    <div>
+                        <h3>成员即将公开</h3>
+                        <p class="member-card__role">鼓手</p>
+                        <p>控制现场节奏，推动歌曲的情绪变化。</p>
+                    </div>
+                </article>
+                <article class="member-card reveal">
+                    <span class="member-card__number">05</span>
+                    <div>
+                        <h3>成员即将公开</h3>
+                        <p class="member-card__role">键盘</p>
+                        <p>负责合成器、氛围音色与电子编排。</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section music" id="music" aria-labelledby="music-title">
+            <div class="music__panel reveal">
+                <div>
+                    <p class="eyebrow">NEW SOUNDS</p>
+                    <h2 id="music-title">第一首歌，正在路上</h2>
+                    <p>作品完成后，这里会第一时间提供试听和完整发布平台。</p>
+                </div>
+                <div class="equalizer" aria-hidden="true">
+                    <span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <p class="site-footer__headline">下一站，现场见。</p>
+        <p>演出合作与社交平台信息即将公布</p>
+        <div class="site-footer__bottom">
+            <span>© <span id="year"></span> 清新空气</span>
+            <a href="#top">返回顶部 ↑</a>
+        </div>
+    </footer>
 </body>
 </html>

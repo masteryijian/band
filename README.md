@@ -22,3 +22,7 @@ python3 -m http.server 8000
 ## 技术
 
 HTML、CSS 和原生 JavaScript，无第三方依赖。
+
+## 代码约定
+
+HTML、CSS 和 JavaScript 使用简洁的中文结构注释，解释页面分区和关键逻辑。注释重点说明“为什么这样做”，避免逐行复述代码。

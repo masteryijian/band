@@ -1,4 +1,5 @@
 :root {
+    /* 全站设计变量集中在这里，方便统一调整颜色和最大内容宽度。 */
     --ink: #050816;
     --ink-soft: #0b1228;
     --surface: rgba(13, 22, 48, 0.72);
@@ -11,6 +12,7 @@
     --content: 1180px;
 }
 
+/* 基础重置与通用排版 */
 * {
     box-sizing: border-box;
 }
@@ -65,6 +67,7 @@ a {
     top: 1rem;
 }
 
+/* 顶部导航 */
 .site-header {
     position: fixed;
     inset: 0 0 auto;
@@ -133,6 +136,7 @@ a {
     display: none;
 }
 
+/* 首屏主视觉 */
 .hero {
     position: relative;
     display: grid;
@@ -287,6 +291,7 @@ h3 {
     background: linear-gradient(var(--cyan), transparent);
 }
 
+/* 页面各内容区共用的宽度和标题样式 */
 .section {
     width: min(calc(100% - 3rem), var(--content));
     margin: 0 auto;
@@ -297,6 +302,7 @@ h3 {
     margin-bottom: clamp(2.5rem, 6vw, 5rem);
 }
 
+/* 乐队介绍 */
 .about__grid {
     display: grid;
     grid-template-columns: 1.15fr 0.85fr;
@@ -316,6 +322,7 @@ h3 {
     font-size: 1.02rem;
 }
 
+/* 巡演信息 */
 .tour {
     position: relative;
 }
@@ -392,6 +399,7 @@ h3 {
     font-size: 0.9rem;
 }
 
+/* 成员卡片 */
 .member-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -452,6 +460,7 @@ h3 {
     letter-spacing: 0.15em;
 }
 
+/* 音乐预告与装饰性均衡器动画 */
 .music__panel {
     display: flex;
     align-items: flex-end;
@@ -498,6 +507,7 @@ h3 {
     to { height: 18%; }
 }
 
+/* 页脚 */
 .site-footer {
     padding: clamp(4rem, 10vw, 8rem) max(1.5rem, calc((100vw - var(--content)) / 2));
     border-top: 1px solid var(--line);
@@ -531,6 +541,7 @@ h3 {
     text-decoration: none;
 }
 
+/* 元素进入视口时，由 script.js 添加 is-visible 类。 */
 .reveal {
     opacity: 0;
     transform: translateY(24px);
@@ -542,6 +553,7 @@ h3 {
     transform: translateY(0);
 }
 
+/* 手机和平板布局 */
 @media (max-width: 760px) {
     .site-header {
         width: min(calc(100% - 2rem), var(--content));
@@ -667,6 +679,7 @@ h3 {
     }
 }
 
+/* 尊重系统的“减少动态效果”设置，避免动画引起不适。 */
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;

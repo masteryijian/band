@@ -11,8 +11,10 @@
 </head>
 
 <body>
+    <!-- 键盘用户可以跳过导航，直接进入页面正文。 -->
     <a class="skip-link" href="#main-content">跳到主要内容</a>
 
+    <!-- 固定导航：桌面端横向展示，手机端由 script.js 控制展开与关闭。 -->
     <header class="site-header" id="top">
         <a class="brand" href="#top" aria-label="清新空气首页">清新空气</a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
@@ -28,12 +30,14 @@
     </header>
 
     <main id="main-content">
+        <!-- 首屏：主视觉、巡演倒计时和两个主要行动入口。 -->
         <section class="hero" aria-labelledby="hero-title">
             <div class="hero__backdrop" aria-hidden="true"></div>
             <div class="hero__content reveal">
                 <p class="eyebrow">2026 SUMMER TOUR</p>
                 <h1 id="hero-title">清新空气</h1>
                 <p class="hero__lead">在噪音与星光之间，寻找属于我们的声音。</p>
+                <!-- 修改演出日期时，只需同步调整这里的 data-show-date 和下方巡演卡片。 -->
                 <div class="countdown" id="countdown" data-show-date="2026-08-08" aria-live="polite">
                     <span class="countdown__label">距离台北现场</span>
                     <strong id="countdown-value">正在计算…</strong>
@@ -46,6 +50,7 @@
             <a class="scroll-cue" href="#about" aria-label="继续浏览">向下</a>
         </section>
 
+        <!-- 乐队定位与简介。 -->
         <section class="section about" id="about" aria-labelledby="about-title">
             <div class="section-heading reveal">
                 <p class="eyebrow">ABOUT US</p>
@@ -60,6 +65,7 @@
             </div>
         </section>
 
+        <!-- 巡演信息：未知的场地和时间明确保留为待公布状态。 -->
         <section class="section tour" id="tour" aria-labelledby="tour-title">
             <div class="section-heading reveal">
                 <p class="eyebrow">LIVE 2026</p>
@@ -81,6 +87,7 @@
             <p class="tour__note reveal">更多城市正在计划中，新的演出信息会在这里更新。</p>
         </section>
 
+        <!-- 成员阵容：确认真实姓名后替换“成员即将公开”即可。 -->
         <section class="section members" id="members" aria-labelledby="members-title">
             <div class="section-heading reveal">
                 <p class="eyebrow">THE BAND</p>
@@ -130,6 +137,7 @@
             </div>
         </section>
 
+        <!-- 音乐预告：作品发布后可在此加入真实的试听平台链接。 -->
         <section class="section music" id="music" aria-labelledby="music-title">
             <div class="music__panel reveal">
                 <div>
@@ -144,6 +152,7 @@
         </section>
     </main>
 
+    <!-- 联系信息确认后，可替换当前占位文字并添加邮箱或社交平台链接。 -->
     <footer class="site-footer" id="contact">
         <p class="site-footer__headline">下一站，现场见。</p>
         <p>演出合作与社交平台信息即将公布</p>
